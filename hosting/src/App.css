@@ -1,0 +1,159 @@
+/* App.css */
+
+/* General styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 95%;
+  margin: 12px auto;
+  padding: 20px;
+  border: 2px solid black;
+  border-radius: 6px;
+
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+/* Table styles */
+.table-container {
+  overflow-x: auto;
+}
+
+.styled-table {
+  width: 100%;
+  border-collapse: collapse;
+  border-spacing: 0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: 1em 0;
+  border: 2px solid #161515;
+}
+
+.styled-table th,
+.styled-table td {
+  padding: 12px 15px;
+  text-align: left;
+  border: 1px solid #151414;
+  color: #333; /* Default text color */
+}
+
+.styled-table th {
+  background-color: #f5f5f5;
+  color: #333; /* Table heading text color */
+}
+
+.dark .styled-table th {
+  background-color: #302c2c;
+  color: white; /* Table heading text color */
+}
+
+.styled-table tbody tr:nth-of-type(even) {
+  background-color: #f9f9f9;
+}
+
+.dark .styled-table tbody tr:nth-of-type(even) {
+  background-color: #302e2e;
+  color: white;
+}
+
+.styled-table tbody tr:hover {
+  background-color: #f2f2f2;
+}
+
+.dark .styled-table tbody tr:hover {
+  background-color: #312e2e;
+}
+
+/* Asset dropdown styles */
+.asset-dropdown {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: #f5f5f5;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  min-height: 40px;
+}
+
+.dark .asset-dropdown{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 10px;
+  margin-bottom: 5px;
+  background-color: #2f2a2a;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.asset-class {
+  margin-right: 10px;
+  font-weight: bold;
+}
+
+.dark .asset-class{
+  margin-right: 10px;
+  color: white;
+  font-weight: bold;
+}
+
+.asset-dropdown:hover {
+  background-color: #bad0e3;
+}
+
+.dark .asset-dropdown:hover {
+  background-color: #e9af71;
+}
+
+/* Light theme */
+.light {
+  background-color: #f8f8f8;
+  color: #333;
+}
+
+.light .styled-table th,
+.light .styled-table td {
+  color: #333; /* Text color for light theme */
+}
+
+/* Dark theme */
+.dark {
+  background-color: #333;
+  color: #f8f8f8;
+}
+
+.dark .styled-table th {
+  background-color: #333;;
+  color: #f8f8f8; /* Table heading text color for dark theme */
+}
+
+.dark .styled-table td {
+  background-color: #403b3b;
+  color: #f8f8f8; /* Text color for dark theme */
+}
+
+.theme-toggle {
+  margin-bottom: 10px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+  text-align: center;
+}
+
+.theme-toggle:hover {
+  background-color: #0056b3;
+}
