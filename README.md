@@ -3,4 +3,4 @@
 #holdings_table 
 
 Fetched the given API using axios
-and displayed in the form table using react(vite)
+and displayed in the form of tables using react(vite)
